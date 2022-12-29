@@ -36,9 +36,9 @@ This project is build on the <a href="https://www.dropbox.com/sh/whatkfg5mr4dr63
 It contains 1450 training videos and 100 testing videos.
 
 <h2 id="Setup">Setup</h2>
-Clone the repository : <code>git clone https://github.com/Shreyz-max/Video-Captioning.git</code>
+Clone the repository : <code>git clone https://github.com/MathurUtkarsh/Video-Captioning-Using-LSTM-and-Keras.git</code>
 
-Video Caption Generator: <code>cd Video-Captioning</code>
+Video Caption Generator: <code>cd Video-Captioning-Using-LSTM-and-Keras</code>
 
 Create environment: <code>conda create -n video_caption python=3.7</code>
 
