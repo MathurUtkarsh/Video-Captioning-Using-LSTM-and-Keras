@@ -157,8 +157,7 @@ To get more information on these search algorithms check out this <a href="https
  * **model_final** folder contains the trained encoder model along with the tokenizerl and decoder model weights.
  * **features.py** extracts 80 frames evenly spread from the video and then those video frames are processed by a pre-trained VGG16 so each frame
     has 4096 dimensions. So for a video we create a numoy array of shape(80, 4096)
-    config.py contains all the configurations i am using
- * **Video_Captioning.ipynb** is the notebook i used for training and building this project.
+ * **config.py contains all the configurations i am using
 
 <h2 id="FutureDevelopment">Future Development</h2>
 <ul>
