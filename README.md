@@ -63,6 +63,7 @@ Run train.py for local training or use the Video_Captioning.ipynb notebook
 
 <p align = "center"><img align = "center" src = "images/model_train.png" /></p>
 
+
 <h3 id="InferenceArchitecture">Inference Architecture</h3>
 
 <h3 id="EncoderModel">Encoder Model</h3>
