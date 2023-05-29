@@ -6,7 +6,6 @@ The significance of captioning stems from its capacity to enhance accessibility 
 
 ## Table of contents
 * <a href="#Inspiration">Inspiration</a>
-* <a href="#SampleResults">Sample Results</a>
 * <a href="#Dataset">Dataset</a>
 * <a href="#Setup">Setup</a>
 * <a href="#Usage">Usage</a>
