@@ -25,7 +25,6 @@ The significance of captioning stems from its capacity to enhance accessibility 
 While exploring new projects, I discovered video captioning and noticed the scarcity of reliable resources available. With this project, I aim to simplify the implementation of video captioning, making it more accessible for individuals interested in this field.
 
 <h2 id="Dataset">Dataset</h2>
-This project is build on the <a href="https://www.dropbox.com/sh/whatkfg5mr4dr63/AACKCO3LwSsHK4_GOmHn4oyYa?dl=0">MSVD</a> dataset. It contains 1450 training videos and 100 testing videos.
 
 This project utilizes the <a href="https://opendatalab.com/MSVD">MSVD</a> dataset, which consists of 1450 training videos and 100 testing videos, to facilitate the development of video captioning models.
 
