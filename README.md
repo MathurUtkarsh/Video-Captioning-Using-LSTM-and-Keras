@@ -1,11 +1,12 @@
-# Video-Captioning-Using-LSTM-and-Keras
+# Video-Captioning
 
-Video Captioning is an encoder decoder mode based on sequence to sequence learning. It takes a video as input and generates a caption describing the event in the video.
+Video Captioning is an encoder decoder mode based on sequence to sequence learning.
+It takes a video as input and generates a caption describing the event in the video. 
 
 The importance of captioning lies in its ability to make video more accessible in numerous ways. 
 Automated video caption generator helps searching of videos in websites better. 
 It can be used for clustering of videos based on their content easier.
-This is a brief overview of my project.
+This is a brief overview of my project. To understand the project in details check out my medium <a href="https://medium.com/analytics-vidhya/video-captioning-with-keras-511984a2cfff">post</a>. I also did a <a href="https://youtu.be/DJEnkhKPbxA">live session</a> on this you can check that as well.
 
 ## Table of contents
 * <a href="#Inspiration">Inspiration</a>
@@ -36,9 +37,9 @@ This project is build on the <a href="https://www.dropbox.com/sh/whatkfg5mr4dr63
 It contains 1450 training videos and 100 testing videos.
 
 <h2 id="Setup">Setup</h2>
-Clone the repository : <code>git clone https://github.com/MathurUtkarsh/Video-Captioning-Using-LSTM-and-Keras.git</code>
+Clone the repository : <code>git clone https://github.com/Shreyz-max/Video-Captioning.git</code>
 
-Video Caption Generator: <code>cd Video-Captioning-Using-LSTM-and-Keras</code>
+Video Caption Generator: <code>cd Video-Captioning</code>
 
 Create environment: <code>conda create -n video_caption python=3.7</code>
 
@@ -62,7 +63,6 @@ Run train.py for local training or use the Video_Captioning.ipynb notebook
 <h3 id="TrainingArchitecture">Training Architecture</h3>
 
 <p align = "center"><img align = "center" src = "images/model_train.png" /></p>
-
 
 <h3 id="InferenceArchitecture">Inference Architecture</h3>
 
@@ -158,7 +158,8 @@ To get more information on these search algorithms check out this <a href="https
  * **model_final** folder contains the trained encoder model along with the tokenizerl and decoder model weights.
  * **features.py** extracts 80 frames evenly spread from the video and then those video frames are processed by a pre-trained VGG16 so each frame
     has 4096 dimensions. So for a video we create a numoy array of shape(80, 4096)
- * **config.py** contains all the configurations i am using
+    config.py contains all the configurations i am using
+ * **Video_Captioning.ipynb** is the notebook i used for training and building this project.
 
 <h2 id="FutureDevelopment">Future Development</h2>
 <ul>
@@ -175,5 +176,4 @@ To get more information on these search algorithms check out this <a href="https
  [Keras implementation](https://github.com/CryoliteZ/Video2Text)
  
 [Intelligent-Projects-Using-Python](https://github.com/PacktPublishing/Intelligent-Projects-Using-Python/blob/master/Chapter05) 
-
 
