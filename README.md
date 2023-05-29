@@ -1,11 +1,8 @@
 # Video-Captioning
 
-Video Captioning is an encoder decoder mode based on sequence to sequence learning.
-It takes a video as input and generates a caption describing the event in the video. 
+Video Captioning is a sequential learning model that employs an encoder-decoder architecture. It accepts a video as input and produces a descriptive caption that summarizes the content of the video.
 
-The importance of captioning lies in its ability to make video more accessible in numerous ways. 
-Automated video caption generator helps searching of videos in websites better. 
-It can be used for clustering of videos based on their content easier.
+The significance of captioning stems from its capacity to enhance accessibility to videos in various ways. An automated video caption generator aids in improving the searchability of videos on websites. Additionally, it facilitates the grouping of videos based on their content by making the process more straightforward.
 
 ## Table of contents
 * <a href="#Inspiration">Inspiration</a>
@@ -24,16 +21,14 @@ It can be used for clustering of videos based on their content easier.
 * <a href="#References">References</a>
 
 <h2 id="Inspiration">Inspiration</h2>
-I was looking around for some new projects when I came across video captioning and I realised the lack of good resources. 
-I hope this project makes it easier for people to implement video captioning.
 
-<h2 id="SampleResults">Sample Results</h2>
-Here is a clip of realtime prediction on the testing data.
-<p align = "center"><img align = "center" src = "images/predict_realtime.gif" /></p>
+While exploring new projects, I discovered video captioning and noticed the scarcity of reliable resources available. With this project, I aim to simplify the implementation of video captioning, making it more accessible for individuals interested in this field.
 
 <h2 id="Dataset">Dataset</h2>
 This project is build on the <a href="https://www.dropbox.com/sh/whatkfg5mr4dr63/AACKCO3LwSsHK4_GOmHn4oyYa?dl=0">MSVD</a> dataset. 
 It contains 1450 training videos and 100 testing videos.
+
+This project utilizes the <a href="https://opendatalab.com/MSVD">MSVD</a> dataset, which consists of 1450 training videos and 100 testing videos, to facilitate the development of video captioning models.
 
 <h2 id="Setup">Setup</h2>
 Clone the repository : <code>git clone https://github.com/MathurUtkarsh/Video-Captioning-Using-LSTM-and-Keras.git</code>
@@ -47,15 +42,17 @@ Activate environment: <code>conda activate video_caption</code>
 Install requirements: <code>pip install -r requirements.txt</code>
 
 <h2 id="Usage">Usage</h2>
-To use the models that have already been trained
 
-Add a video to **data/testing_data/video** folder and run the predict realtime file as <code>python predict_realtime.py</code>
+To utilize the pre-trained models, follow these steps:
 
-For faster results extract the features of the video and save it in feat folder of the testing_data.
+1. Add a video to the "data/testing_data/video" folder.
+2. Execute the "predict_realtime.py" file using the command: python predict_realtime.py.
 
-To convert into features run the extract_features.py file as <code>python extract_features.py</code>
+For quicker results, extract the features of the video and save them in the "feat" folder within the "testing_data" directory.
 
-Run train.py for local training or use the Video_Captioning.ipynb notebook 
+To convert the video into features, run the "extract_features.py" file using the command: python extract_features.py.
+
+For local training, run the "train.py" file. Alternatively, you can use the "Video_Captioning.ipynb" notebook.
 
 <h2 id="Model">Model</h2>
 
@@ -72,11 +69,11 @@ Run train.py for local training or use the Video_Captioning.ipynb notebook
 <p align = "center"><img align = "center" src = "images/model_inference_decoder.png" /></p>
 
 <h3 id="Loss">Loss</h3>
-This is the graph of epochs vs loss. The loss used is categorical crossentropy.
+This is the graph of epochs vs loss. The loss used here is categorical crossentropy.
 <p align = "center"><img align = "center" src = "images/loss.png" /></p>
 
 <h3 id="Metric">Metric</h3>
-This is the graph of epochs vs metric. The metric used is accuracy.
+This is the graph of epochs vs metric. The metric used here is accuracy.
 <p align = "center"><img align = "center" src = "images/accuracy.png" /></p>
 
 <h2 id="Features">Features</h2>
@@ -86,9 +83,9 @@ This is the graph of epochs vs metric. The metric used is accuracy.
  <li> Beam search and Greedy search</li>
  </ul>
  
-Greedy search selects the most likely word at each step in the output sequence.
-Beam search algorithm selects multiple alternatives for an input sequence at each timestep based on conditional probability.
-To get more information on these search algorithms check out this <a href="https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/">post</a> 
+The greedy search algorithm chooses the word with the highest probability at each step of generating the output sequence. In contrast, the beam search algorithm considers multiple alternative words at each timestep based on their conditional probabilities.
+
+For a more detailed understanding of these search algorithms, you can refer to this informative <a href="https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/">blog post</a>.
 
 <h3 id="Performance">Performance of both algorithms on testing data</h3>
 <table>
@@ -162,10 +159,11 @@ To get more information on these search algorithms check out this <a href="https
 
 <h2 id="FutureDevelopment">Future Development</h2>
 <ul>
- <li> Adding attention blocks and pretrained embeddding like glove so that the model understands sentences better</li> 
- <li> Using other pretrained models to extract features specially ones made for understanding videos like I3D</li> 
- <li> Right now the model uses only 80 frames improvements need to be made so that it can work even for longer videos</li>
- <li> Adding a UI to the project</li>
+ <li>Integrating attention blocks and pretrained embeddings (e.g., GloVe) to enhance the model's comprehension of sentences.</li> 
+ <li>Exploring the use of other pretrained models, such as I3D, specifically designed for video understanding, to improve feature extraction.</li> 
+ <li>Expanding the model's capability to handle longer videos, as it currently supports only 80 frames.</li>
+ <li>Incorporating a user interface (UI) into the project for a more user-friendly experience.</li>
+ <li>Using Chat-GPT API provided by Open-AI to get more creative and compelling captions.
 </ul>
 
  <h2 id="References">References</h2>
