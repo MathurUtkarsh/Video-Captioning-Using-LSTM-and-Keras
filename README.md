@@ -58,8 +58,6 @@ For local training, run the "train.py" file. Alternatively, you can use the "Vid
 
 <p align = "center"><img align = "center" src = "images/model_train.png" /></p>
 
-<h3 id="InferenceArchitecture">Inference Architecture</h3>
-
 <h3 id="EncoderModel">Encoder Model</h3>
 <p align = "center"><img align = "center" src = "images/model_inference_encoder.png" /></p>
 
